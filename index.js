@@ -8,7 +8,7 @@ app.get('/mytestapp', function(request, response) {
 
 app.get('/chatmessage', function(request, response) {
     console.log("Sending Chat Communication");
-        response.send('Message Incoming');
+        response.render('index')
 });
 
 app.listen(process.env.PORT || 3000, function(){
