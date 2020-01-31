@@ -6,6 +6,11 @@ app.get('/mytestapp', function(request, response) {
         response.send('Hello World!');
 });
 
+app.get('/chatmessage', function(request, response) {
+    console.log("Sending Chat Communication");
+        response.send('Message Incoming');
+});
+
 app.listen(process.env.PORT || 3000, function(){
     console.log("App listening on port 3000");
 });
