@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <authentication mode="Forms">
+        <forms loginUrl="~/Account/Login" defaultUrl="~/">
+          <credentials passwordFormat="SHA1">
+            <user name="admin" password="e9fe51f94eadabf54dbf2fbbd57188b9abee436e" />
+          </credentials>
+        </forms>
+      </authentication>
+     <head>
+      <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <form action="/chatmessage" method="post">
+          <input name="mes" type="text" class="ghost-input" placeholder="Enter the Chat Message" required>
+          <input type="submit" class="ghost-button" value="Send Message">
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
