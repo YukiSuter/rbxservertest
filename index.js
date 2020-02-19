@@ -6,17 +6,7 @@ let mess = ''
 
 //authentication
 
-var auth = require('http-auth');
-var basic = auth.basic({
-        realm: "Simon Area."
-    }, (username, password, callback) => { 
-        // Custom authentication
-        // Use callback(error) if you want to throw async error.
-        callback(username === "admin" && password === "password");
-    }
-);
 
-app.use(auth.connect(basic));
 
 ///authentication end
 
@@ -42,6 +32,17 @@ app.get('/mytestapp', function(request, response) {
 
 app.get('/chatmessage', function(request, response) {
     response.render('index.ejs');
+    var auth = require('http-auth');
+    var basic = auth.basic({
+        realm: "Simon Area."
+    }, (username, password, callback) => { 
+        // Custom authentication
+        // Use callback(error) if you want to throw async error.
+        callback(username === "admin" && password === "password");
+    }
+);
+
+app.use(auth.connect(basic));
 });
 
 app.get('/requestchatmessage', function(request, response) {
