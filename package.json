@@ -10,10 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "colors": "^1.4.0",
+    "describe": "^1.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "express-subdomain": "^1.0.5",
     "http-auth": "^3.2.4",
     "install": "^0.13.0",
-    "nano": "^8.1.0"
+    "mysql": "^2.18.1",
+    "nano": "^8.1.0",
+    "request": "^2.88.2",
+    "vhost": "^3.0.2",
+    "wildcard-subdomains": "^1.1.0"
   }
 }
