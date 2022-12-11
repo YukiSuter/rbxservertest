@@ -14,7 +14,7 @@
     "colors": "^1.4.0",
     "describe": "^1.2.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-subdomain": "^1.0.5",
     "http-auth": "^3.2.4",
     "install": "^0.13.0",
